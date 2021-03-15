@@ -1,0 +1,12 @@
+import React, { Component } from 'react'
+import "./App.css";
+
+class App extends Component {
+  return (
+    <div className="App">
+      <h1>Burger Builder</h1>
+    </div>
+  );
+}
+
+export default App;
