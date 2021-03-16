@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import classes from "./BurgerIngredient.css";
+import classes from "./BurgerBuilder.css";
 import PropTypes from "prop-types";
 
 class BurgerIngredients extends Component {
   render() {
-    let ingredients = null;
+    let ingredients = noll;
 
     switch (this.props.type) {
       case "bread-bottom":

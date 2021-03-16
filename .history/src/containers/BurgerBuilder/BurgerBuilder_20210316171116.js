@@ -37,6 +37,7 @@ class BurgerBuilder extends Component {
     upadtedIngredients[type] = upadtedCount;
     const newPrice = this.state.totalPrice - INGREDIENTS_PRICE[type];
     this.setState({ ingredients: upadtedIngredients, totalPrice: newPrice });
+    console.log(this.state);
   };
 
   render() {

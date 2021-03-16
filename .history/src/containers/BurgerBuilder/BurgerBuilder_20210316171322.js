@@ -37,11 +37,13 @@ class BurgerBuilder extends Component {
     upadtedIngredients[type] = upadtedCount;
     const newPrice = this.state.totalPrice - INGREDIENTS_PRICE[type];
     this.setState({ ingredients: upadtedIngredients, totalPrice: newPrice });
+    console.log(this.state);
   };
 
   render() {
     const disabledInfo = { ...this.state.ingredients };
     for (let key in disabledInfo) disabledInfo[key] = disabledInfo[key] <= 0;
+    console.log(disabledInfo);
     return (
       <Aux>
         <h1>Burger</h1>
